@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loudia - 鎌倉のガレット専門店</title>
+    <meta
+      name="description"
+      content="鎌倉市にあるガレット専門店Loudia。お手頃価格でゆっくりと落ち着いた空間でフランス伝統のガレットをお楽しみいただけます。"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Playfair+Display:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- ヘッダー・ナビゲーション -->
+    <header class="header" id="header">
+      <div class="container">
+        <nav class="nav">
+          <div class="logo">
+            <a href="#home">Loudia</a>
+          </div>
+          <button class="nav-toggle" id="navToggle" aria-label="メニュー">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#menu" class="nav-link">Menu</a></li>
+            <li><a href="#news" class="nav-link">News</a></li>
+            <li><a href="#access" class="nav-link">Access</a></li>
+            <li>
+              <a href="#reservation" class="nav-link nav-link-primary">予約</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ヒーローセクション -->
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">Loudia</h1>
+        <p class="hero-subtitle">鎌倉で味わう、本格ガレット</p>
+        <p class="hero-description">お手頃価格で、ゆっくりと落ち着いた空間</p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn btn-primary">メニューを見る</a>
+          <a href="#reservation" class="btn btn-secondary">ご予約</a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- Aboutセクション -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">About Us</span>
+          <h2 class="section-title">Loudiaについて</h2>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>お手頃価格で本格ガレットを</h3>
+            <p>
+              Loudiaは、鎌倉の落ち着いた空間で本格的なフランス伝統のガレットをお楽しみいただけるお店です。
+            </p>
+            <p>
+              そば粉100%で作るガレットは、もちもちとした食感と香ばしい風味が特徴。新鮮な地元食材と組み合わせた、ここだけの味をご提供しています。
+            </p>
+            <p>
+              お手頃な価格設定で、ご家族や友人とゆっくりとお食事をお楽しみいただけます。20代から50代まで、幅広い年齢層の方々に愛される空間づくりを心がけています。
+            </p>
+            <div class="about-features">
+              <div class="feature-item">
+                <i class="fas fa-heart"></i>
+                <h4>手作りへのこだわり</h4>
+                <p>毎朝、店内で生地から手作りしています</p>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-leaf"></i>
+                <h4>地元食材の活用</h4>
+                <p>鎌倉・湘南の新鮮な食材を使用</p>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-coffee"></i>
+                <h4>くつろぎの空間</h4>
+                <p>ゆったりとした時間をお過ごしください</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <div class="image-placeholder">
+              <i class="fas fa-store"></i>
+              <p>店内イメージ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menuセクション -->
+    <section class="menu" id="menu">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Menu</span>
+          <h2 class="section-title">メニュー</h2>
+          <p class="section-description">
+            そば粉100%の本格ガレットと、甘いクレープをご用意しております
+          </p>
+        </div>
+        <div class="menu-categories">
+          <button class="menu-category-btn active" data-category="galette">
+            ガレット
+          </button>
+          <button class="menu-category-btn" data-category="crepe">
+            クレープ
+          </button>
+          <button class="menu-category-btn" data-category="drink">
+            ドリンク
+          </button>
+        </div>
+        <div class="menu-grid" id="menuGrid">
+          <!-- ガレットメニュー -->
+          <div class="menu-item" data-category="galette">
+            <div class="menu-item-image">
+              <div class="image-placeholder">
+                <i class="fas fa-utensils"></i>
+              </div>
+            </div>
+            <div class="menu-item-content">
+              <h3>コンプレット</h3>
+              <p class="menu-item-description">
+                ハム、卵、チーズの定番ガレット
+              </p>
+              <p class="menu-item-price">¥980</p>
+            </div>
+          </div>
+          <div class="menu-item" data-category="galette">
+            <div class="menu-item-image">
+              <div class="image-placeholder">
+                <i class="fas fa-utensils"></i>
+              </div>
+            </div>
+            <div class="menu-item-content">
+              <h3>サーモンと野菜のガレット</h3>
+              <p class="menu-item-description">スモークサーモンと新鮮野菜</p>
+              <p class="menu-item-price">¥1,280</p>
+            </div>
+          </div>
+          <div class="menu-item" data-category="galette">
+            <div class="menu-item-image">
+              <div class="image-placeholder">
+                <i class="fas fa-utensils"></i>
+              </div>
+            </div>
+            <div class="menu-item-content">
+              <h3>鎌倉野菜のガレット</h3>
+              <p class="menu-item-description">地元産の旬野菜をたっぷりと</p>
+              <p class="menu-item-price">¥1,180</p>
+            </div>
+          </div>
+          <div class="menu-item" data-category="galette">
+            <div class="menu-item-image">
+              <div class="image-placeholder">
+                <i class="fas fa-utensils"></i>
+              </div>
+            </div>
+            <div class="menu-item-content">
+              <h3>きのことベーコンのガレット</h3>
+              <p class="menu-item-description">
+                香り豊かなきのこと厚切りベーコン
+              </p>
+              <p class="menu-item-price">¥1,080</p>
+            </div>
+          </div>
+
+          <!-- クレープメニュー -->
+          <div class="menu-item" data-category="crepe" style="display: none">
+            <div class="menu-item-image">
+              <div class="image-placeholder">
+                <i class="fas fa-ice-cream"></i>
+              </div>
+            </div>
+            <div class="menu-item-content">
+              <h3>シュクレ</h3>
+              <p class="menu-item-description">シンプルにバターと砂糖で</p>
+              <p class="menu-item-price">¥680</p>
+            </div>
+          </div>
+          <div class="menu-item" data-category="crepe" style="display: none">
+            <div class="menu-item-image">
+              <div class="image-placeholder">
+                <i class="fas fa-ice-cream"></i>
+              </div>
+            </div>
+            <div class="menu-item-content">
+              <h3>バナナとチョコレート</h3>
+              <p class="menu-item-description">バナナとチョコレートソース</p>
+              <p class="menu-item-price">¥880</p>
+            </div>
+          </div>
+          <div class="menu-item" data-category="crepe" style="display: none">
+            <div class="menu-item-image">
+              <div class="image-placeholder">
+                <i class="fas fa-ice-cream"></i>
+              </div>
+            </div>
+            <div class="menu-item-content">
+              <h3>季節のフルーツクレープ</h3>
+              <p class="menu-item-description">旬のフルーツとクリーム</p>
+              <p class="menu-item-price">¥980</p>
+            </div>
+          </div>
+
+          <!-- ドリンクメニュー -->
+          <div class="menu-item" data-category="drink" style="display: none">
+            <div class="menu-item-image">
+              <div class="image-placeholder">
+                <i class="fas fa-coffee"></i>
+              </div>
+            </div>
+            <div class="menu-item-content">
+              <h3>コーヒー</h3>
+              <p class="menu-item-description">ホット / アイス</p>
+              <p class="menu-item-price">¥480</p>
+            </div>
+          </div>
+          <div class="menu-item" data-category="drink" style="display: none">
+            <div class="menu-item-image">
+              <div class="image-placeholder">
+                <i class="fas fa-mug-hot"></i>
+              </div>
+            </div>
+            <div class="menu-item-content">
+              <h3>紅茶</h3>
+              <p class="menu-item-description">アールグレイ / ダージリン</p>
+              <p class="menu-item-price">¥480</p>
+            </div>
+          </div>
+          <div class="menu-item" data-category="drink" style="display: none">
+            <div class="menu-item-image">
+              <div class="image-placeholder">
+                <i class="fas fa-glass-whiskey"></i>
+              </div>
+            </div>
+            <div class="menu-item-content">
+              <h3>シードル</h3>
+              <p class="menu-item-description">フランス産リンゴのお酒</p>
+              <p class="menu-item-price">¥680</p>
+            </div>
+          </div>
+          <div class="menu-item" data-category="drink" style="display: none">
+            <div class="menu-item-image">
+              <div class="image-placeholder">
+                <i class="fas fa-glass-martini"></i>
+              </div>
+            </div>
+            <div class="menu-item-content">
+              <h3>オレンジジュース</h3>
+              <p class="menu-item-description">フレッシュジュース</p>
+              <p class="menu-item-price">¥480</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsセクション -->
+    <section class="news" id="news">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">News</span>
+          <h2 class="section-title">お知らせ</h2>
+        </div>
+        <div class="news-grid" id="newsGrid">
+          <div class="news-item">
+            <div class="news-date">2024.01.15</div>
+            <h3 class="news-title">冬の新メニュー登場</h3>
+            <p class="news-content">
+              寒い季節にぴったりの温かいガレットメニューを追加しました。
+            </p>
+          </div>
+          <div class="news-item">
+            <div class="news-date">2024.01.10</div>
+            <h3 class="news-title">営業時間のお知らせ</h3>
+            <p class="news-content">1月の営業時間は11:00-19:00となります。</p>
+          </div>
+          <div class="news-item">
+            <div class="news-date">2024.01.05</div>
+            <h3 class="news-title">新年のご挨拶</h3>
+            <p class="news-content">本年もLoudiaをよろしくお願いいたします。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accessセクション -->
+    <section class="access" id="access">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Access</span>
+          <h2 class="section-title">アクセス</h2>
+        </div>
+        <div class="access-content">
+          <div class="access-info">
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>住所</h4>
+                <p>〒248-0000<br />神奈川県鎌倉市○○町1-2-3</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-train"></i>
+              <div>
+                <h4>アクセス</h4>
+                <p>JR鎌倉駅 東口より徒歩5分<br />江ノ電鎌倉駅より徒歩7分</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h4>営業時間</h4>
+                <p>11:00 - 19:00<br />（ラストオーダー 18:30）</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-calendar-times"></i>
+              <div>
+                <h4>定休日</h4>
+                <p>火曜日・第3水曜日</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h4>お電話</h4>
+                <p>0467-XX-XXXX</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-parking"></i>
+              <div>
+                <h4>駐車場</h4>
+                <p>近隣のコインパーキングをご利用ください</p>
+              </div>
+            </div>
+          </div>
+          <div class="access-map">
+            <div class="map-placeholder">
+              <i class="fas fa-map"></i>
+              <p>Google Map</p>
+              <small
+                >※実際の住所が決まりましたら、Google Mapを埋め込みます</small
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reservationセクション -->
+    <section class="reservation" id="reservation">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Reservation</span>
+          <h2 class="section-title">ご予約</h2>
+          <p class="section-description">
+            お席のご予約を承っております。下記フォームよりお申し込みください。
+          </p>
+        </div>
+        <div class="reservation-content">
+          <form class="reservation-form" id="reservationForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">お名前 <span class="required">*</span></label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="phone"
+                  >お電話番号 <span class="required">*</span></label
+                >
+                <input type="tel" id="phone" name="phone" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email"
+                  >メールアドレス <span class="required">*</span></label
+                >
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="guests">人数 <span class="required">*</span></label>
+                <select id="guests" name="guests" required>
+                  <option value="">選択してください</option>
+                  <option value="1">1名</option>
+                  <option value="2">2名</option>
+                  <option value="3">3名</option>
+                  <option value="4">4名</option>
+                  <option value="5">5名</option>
+                  <option value="6">6名以上</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date"
+                  >ご希望日 <span class="required">*</span></label
+                >
+                <input type="date" id="date" name="date" required />
+              </div>
+              <div class="form-group">
+                <label for="time"
+                  >ご希望時間 <span class="required">*</span></label
+                >
+                <select id="time" name="time" required>
+                  <option value="">選択してください</option>
+                  <option value="11:00">11:00</option>
+                  <option value="11:30">11:30</option>
+                  <option value="12:00">12:00</option>
+                  <option value="12:30">12:30</option>
+                  <option value="13:00">13:00</option>
+                  <option value="13:30">13:30</option>
+                  <option value="14:00">14:00</option>
+                  <option value="14:30">14:30</option>
+                  <option value="15:00">15:00</option>
+                  <option value="15:30">15:30</option>
+                  <option value="16:00">16:00</option>
+                  <option value="16:30">16:30</option>
+                  <option value="17:00">17:00</option>
+                  <option value="17:30">17:30</option>
+                  <option value="18:00">18:00</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">ご要望・メッセージ</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="アレルギー情報やご要望などございましたらご記入ください"
+              ></textarea>
+            </div>
+            <div class="form-submit">
+              <button type="submit" class="btn btn-primary btn-large">
+                予約を送信
+              </button>
+            </div>
+          </form>
+          <div class="reservation-notice">
+            <h4><i class="fas fa-info-circle"></i> ご予約について</h4>
+            <ul>
+              <li>ご予約は2日前までにお願いいたします</li>
+              <li>当日のご予約はお電話にてお問い合わせください</li>
+              <li>キャンセルの場合は前日までにご連絡をお願いいたします</li>
+              <li>お子様連れも大歓迎です</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3 class="footer-logo">Loudia</h3>
+            <p>鎌倉で味わう、本格ガレット</p>
+          </div>
+          <div class="footer-section">
+            <h4>営業時間</h4>
+            <p>11:00 - 19:00</p>
+            <p>定休日: 火曜日・第3水曜日</p>
+          </div>
+          <div class="footer-section">
+            <h4>お問い合わせ</h4>
+            <p><i class="fas fa-phone"></i> 0467-XX-XXXX</p>
+            <p><i class="fas fa-envelope"></i> info@loudia.jp</p>
+          </div>
+          <div class="footer-section">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Loudia. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- トップへ戻るボタン -->
+    <button class="scroll-top" id="scrollTop" aria-label="トップへ戻る">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="main.js"></script>
+  </body>
+</html>
